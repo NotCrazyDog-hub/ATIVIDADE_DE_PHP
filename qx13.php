@@ -7,10 +7,10 @@
 </head>
 <body>
     <?php
-    echo $n1 = 1;
+    echo "Seu número escolhido é " , $n1 = 12;
     echo "<br>";
     if ($n1 > 10) {
-        echo "$n1 é maior que 10";
+        echo "e $n1 é maior que 10";
     }
     else {
         echo '';
