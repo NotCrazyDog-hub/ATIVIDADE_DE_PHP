@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>q11</title>
 </head>
 <body>
+    <form method="get">
+        Compre um Notebook da Vivobook por R$ 2799,99 aqui!
+        <br>
+        Insira a porcentagem<input type="number" name="porcento">
+        <br>
+        <input type="submit">
+    </form>
     <?php
-    $custoDeFabrica = 50000;
-
-    $imposto = $custoDeFabrica * 0.45;
-
-    $custoComImposto = $custoDeFabrica + $imposto;
-
-    $distribuidor = $custoComImposto * 0.28;
-
-    $custoAoConsumidor =  $custoComImposto + $distribuidor;
-
-    echo "O custo de fábrica é R$ $custoDeFabrica + impostos de 45% somados com a porcentagem do distribuidor de 28%";
-    echo "<br>";
-    echo "= R$ $custoAoConsumidor";
+    if (isset($_GET["porcento"])) {
+        $valor = 2799.99;
+        $porcento = $_GET["porcento"] / 100;
+        $valorComPorcento = $valor + $valor * $porcento;
+        echo "O valor a ser pago é R$ $valorComPorcento";
+    }
     ?>
 </body>
 </html>
