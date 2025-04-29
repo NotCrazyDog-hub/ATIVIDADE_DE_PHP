@@ -10,10 +10,11 @@
     echo $v1 = 245;
     echo "<br>";
     echo $v2 = 245;
+    echo "<br>";
     function soma($x, $y) {
         return $x + $y;
     }
-    echo "A soma de {$v1} com {$v2} é " soma($v1, $v2);
+    echo "A soma de {$v1} com {$v2} é " , soma($v1, $v2);
     ?>
 </body>
 </html>

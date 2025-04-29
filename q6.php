@@ -7,14 +7,16 @@
 </head>
 <body>
     <?php
+    echo "a =" , $a = 12;
+    echo "<br>";
+    echo "b = " , $b = 21;
+    echo "<br>";
+
+    [$a, $b] = [$b, $a];
+    echo "a: $a, b: $b";
+
     // $a = 12;
     // $b = 21;
-
-    // [$a, $b] = [$b, $a];
-    // echo "a: $a, b: $b";
-
-    $a = 12;
-    $b = 21;
     ?>
 </body>
 </html>
